@@ -11,7 +11,20 @@ namespace Methods2
         static void Main(string[] args)
         {
             Console.WriteLine("WOWIE");
+
+            int score;
+            score = 0;
+            score = AddScore(score, 100);
+            Console.WriteLine("Score: " + score);
+
+
             Console.ReadKey(true);
+        }
+
+
+        static int AddScore(int prevScore, int pointsEarned)
+        {
+            return (prevScore + pointsEarned);
         }
     }
 }
